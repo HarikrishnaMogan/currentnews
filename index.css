@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.h1,.card h1{
+   text-align: center;
+}
+.container{
+    width:100%;
+    padding: 0 10%;
+}
+.card{
+    width:100%;
+    box-shadow: 1px 1px 5px black;
+    padding: 10px;
+    margin-bottom:20px;
+}
+.card img{
+    width:100%;
+    object-fit: cover;
+    height:50%;
+}
+.burger{
+    margin-left: 20px;
+    width:50px;
+    height:50px;
+    position:relative;
+   cursor:pointer;
+}
+.bar1,.bar2,.bar3{
+    width:30px;
+    height:4px;
+    background-color: black;
+    position:absolute;
+    transition: transform 1s ease;
+}
+.bar2{
+    transform: translateY(10px);
+    visibility: visible;
+}
+.bar3{
+    transform: translateY(20px);
+}
+.change .bar2{
+    visibility: hidden;
+}
+.change .bar1{
+transform: translateY(10px)rotateZ(45deg);
+}
+.change .bar3{
+    transform: translateY(10px)rotateZ(-45deg);
+    }
+
+    .buttons{
+       width:auto;
+       height:30rem;
+       background-color: rgb(116, 116, 116,70%);
+       position: absolute;
+       transform: translateX(-100%);
+       border-radius:0 40% 70% 0;
+       visibility: hidden;
+       transition: all 1s ease;
+    }
+button{
+    display: block;
+    color:white;
+    background-color:transparent;
+    border: none;
+    width:100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: yellowgreen;
+}
+.change 
+{
+    visibility: visible;
+    display:block;
+    transform: translateX(0%);
+}
+.date{
+    color:grey;
+}
+.desc{
+    margin-top:30px;
+}
+@media screen and (min-width:600px)
+{
+    .container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .card{
+        padding: 10%;
+    }
+}
+@media screen and (min-width:2560px)
+{
+    .container,.h1{
+        font-size:2vh ;
+    }
+}

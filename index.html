@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Review</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+       
+        <div>
+            <div class="h1"><h1>Daily Currents</h1></div>
+        </div>
+        <div class="dropdown" onclick="burgertoggle()">
+            <div class="burger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="buttons"  onclick="burgertoggle()">
+                <button onclick="api('all');burgertoggle()">All</button> 
+                <button onclick="api('regional');burgertoggle()">Regional</button>
+                <button onclick="api('world');burgertoggle()">World</button>
+                <button onclick="api('sports');burgertoggle()">Sports</button>
+                <button onclick="api('entertainment');burgertoggle()">Entertainment</button>
+                <button onclick="api('finance');burgertoggle()">Finance</button>
+            </div>
+        </div>
+        <div class="container"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
